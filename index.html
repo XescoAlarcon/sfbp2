@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evidence-Based Tobacco Control Best Practices Repository for Healthcare Professionals">
+    <title>Smoke and Aerosol Free Best Practices Repository</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>SFBP</h1>
+                    <span>Smoke and Aerosol Free Best Practices</span>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#practices">Best Practices</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Evidence-Based Tobacco Control</h2>
+                <p class="hero-subtitle">A comprehensive repository of best practices for healthcare professionals dedicated to tobacco cessation and prevention</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Best Practices</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">45</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Resources</span>
+                    </div>
+                </div>
+                <a href="#practices" class="btn btn-primary">Explore Best Practices</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Search Section -->
+    <section class="quick-search">
+        <div class="container">
+            <div class="search-box">
+                <h3>Find Best Practices</h3>
+                <form id="searchForm" class="search-form">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" placeholder="Search by keyword, program name, or intervention type..." aria-label="Search">
+                        <button type="submit" class="search-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Introduction -->
+            <section class="intro-section">
+                <div class="intro-content">
+                    <h2>About This Repository</h2>
+                    <p>Tobacco use remains the leading cause of preventable death worldwide. This repository provides healthcare professionals with access to evidence-based best practices, proven interventions, and comprehensive resources for tobacco prevention, cessation, and control.</p>
+                    <p>Our collection includes programs focused on:</p>
+                    <ul class="feature-list">
+                        <li>Tobacco use prevention and education</li>
+                        <li>Cessation programs and interventions</li>
+                        <li>Secondhand smoke exposure reduction</li>
+                        <li>Policy implementation and advocacy</li>
+                        <li>Clinical treatment protocols</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Filter and Listing Section -->
+            <section class="practices-section" id="practices">
+                <div class="section-header">
+                    <h2>Browse Best Practices</h2>
+                    <p>Use filters to find specific interventions and programs</p>
+                </div>
+
+                <div class="content-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="filters-sidebar">
+                        <div class="filter-header">
+                            <h3>Filters</h3>
+                            <button id="clearFilters" class="btn-link">Clear All</button>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Intervention Type</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="intervention" value="prevention">
+                                <span>Prevention</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="intervention" value="cessation">
+                                <span>Cessation</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="intervention" value="secondhand">
+                                <span>Secondhand Smoke</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="intervention" value="policy">
+                                <span>Policy & Advocacy</span>
+                            </label>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Target Population</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="population" value="youth">
+                                <span>Youth & Adolescents</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="population" value="adults">
+                                <span>Adults</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="population" value="pregnant">
+                                <span>Pregnant Women</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="population" value="seniors">
+                                <span>Seniors</span>
+                            </label>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Setting</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="setting" value="clinical">
+                                <span>Clinical/Hospital</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="setting" value="community">
+                                <span>Community</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="setting" value="school">
+                                <span>School-Based</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="setting" value="workplace">
+                                <span>Workplace</span>
+                            </label>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Evidence Level</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="evidence" value="high">
+                                <span>High Evidence</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="evidence" value="moderate">
+                                <span>Moderate Evidence</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="evidence" value="emerging">
+                                <span>Emerging Evidence</span>
+                            </label>
+                        </div>
+                    </aside>
+
+                    <!-- Results Area -->
+                    <div class="results-area">
+                        <div class="results-header">
+                            <div class="results-count">
+                                Showing <span id="resultCount">30</span> of <span id="totalCount">30</span> best practices
+                            </div>
+                            <div class="results-actions">
+                                <label for="sortSelect">Sort by:</label>
+                                <select id="sortSelect">
+                                    <option value="relevance">Relevance</option>
+                                    <option value="name">Name A-Z</option>
+                                    <option value="date">Recently Added</option>
+                                    <option value="evidence">Evidence Level</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="active-filters" id="activeFilters"></div>
+
+                        <div class="programs-grid" id="programsGrid">
+                            <!-- Programs will be loaded here via JavaScript -->
+                        </div>
+
+                        <div class="pagination" id="pagination">
+                            <button class="page-btn" disabled>Previous</button>
+                            <div class="page-numbers">
+                                <button class="page-number active">1</button>
+                                <button class="page-number">2</button>
+                                <button class="page-number">3</button>
+                            </div>
+                            <button class="page-btn">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section class="resources-section" id="resources">
+                <h2>Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>Clinical Guidelines</h3>
+                        <p>Evidence-based treatment protocols and clinical practice guidelines for tobacco cessation.</p>
+                        <a href="#" class="resource-link">Access Guidelines →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📊</div>
+                        <h3>Research & Data</h3>
+                        <p>Latest research findings, statistics, and data on tobacco use and control interventions.</p>
+                        <a href="#" class="resource-link">View Research →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🎓</div>
+                        <h3>Training Materials</h3>
+                        <p>Educational resources and training programs for healthcare professionals.</p>
+                        <a href="#" class="resource-link">Explore Training →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🌍</div>
+                        <h3>Policy Toolkit</h3>
+                        <p>Tools and resources for implementing tobacco control policies and advocacy.</p>
+                        <a href="#" class="resource-link">Get Toolkit →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest Updates Section -->
+            <section class="updates-section">
+                <h2>Latest Updates</h2>
+                <div class="updates-grid">
+                    <article class="update-card">
+                        <div class="update-date">October 15, 2025</div>
+                        <h3>New Evidence-Based Cessation Protocol Released</h3>
+                        <p>Updated guidelines for pharmacological interventions in tobacco cessation now available with comprehensive implementation toolkit.</p>
+                        <a href="#" class="update-link">Read More →</a>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-date">October 1, 2025</div>
+                        <h3>Youth Prevention Program Shows Promising Results</h3>
+                        <p>Multi-year study demonstrates significant reduction in tobacco initiation among adolescents using innovative peer-led interventions.</p>
+                        <a href="#" class="update-link">Read More →</a>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-date">September 20, 2025</div>
+                        <h3>Global Tobacco Control Conference Highlights</h3>
+                        <p>Key takeaways and best practices shared from the international conference on advancing tobacco control strategies.</p>
+                        <a href="#" class="update-link">Read More →</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About TCBP</h4>
+                    <p>The Tobacco Control Best Practices Repository is dedicated to providing healthcare professionals with evidence-based resources for tobacco prevention and cessation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#practices">Best Practices</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Clinical Guidelines</a></li>
+                        <li><a href="#">Research Database</a></li>
+                        <li><a href="#">Training Programs</a></li>
+                        <li><a href="#">Policy Toolkit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Newsletter Signup</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Smoke and Aerosol Free Best Practices. All rights reserved.</p>
+                <p class="disclaimer">The content represents evidence-based practices from peer-reviewed sources. Healthcare professionals should adapt interventions to their specific clinical context.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
