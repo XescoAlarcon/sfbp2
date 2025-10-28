@@ -202,7 +202,7 @@ Design inspiration:
 
 ## License
 
-This is a demonstration project. Adapt as needed for your organization.
+This is a demonstration project.
 
 ## Contact
 
@@ -210,9 +210,8 @@ For healthcare professionals seeking tobacco control resources.
 
 ---
 
-**Note**: This is a static demonstration. In a production environment, you would:
+**Note**: This is a static demonstration. We need to implement:
 - Connect to a backend database
-- Implement user authentication
 - Add content management system
 - Include analytics tracking
 - Implement proper security measures
